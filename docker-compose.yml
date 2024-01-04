@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  server:
+    build:
+      context: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/app/
+    env_file:
+      - ./.env.dev
+    ports:
+      - 8009:8000
+
+volumes:
+  static_volume:  # Add this block
+  postgres_data:

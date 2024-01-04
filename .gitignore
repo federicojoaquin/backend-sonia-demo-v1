@@ -1,0 +1,7 @@
+__pycache__
+env
+.env
+.env.dev
+*.sqlite3
+.pre-commit-config.yaml
+config/env_vars.py
